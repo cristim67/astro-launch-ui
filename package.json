@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "cross-env PUBLIC_URL=/ astro build",
     "preview": "astro preview",
     "astro": "astro",
     "create-free-demo": "node create-free-demo.js"
@@ -52,7 +52,8 @@
     "@types/next": "^9.0.0",
     "sass": "^1.55.0",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "cross-env": "^7.0.3"
   },
   "repository": {
     "type": "git",
