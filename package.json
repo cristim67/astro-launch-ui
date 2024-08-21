@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "cross-env PUBLIC_URL=/ astro build",
+    "build": "cross-env PUBLIC_URL=/ cross-env CI=false astro build",
     "preview": "astro preview",
     "astro": "astro",
     "create-free-demo": "node create-free-demo.js"
